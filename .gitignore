@@ -1,0 +1,39 @@
+# Ignore everything at the repo root by default.
+# Replit pushes its full workspace to this repo, but we only want to track
+# a small curated set of paths (see allow-list below).
+/*
+
+# Keep git metadata working
+!/.gitignore
+!/.gitattributes
+!/.gitmodules
+
+# Allow-listed directories (only these are tracked)
+!/.ai/
+!/.windsurf/
+!/artifacts/
+
+# Under artifacts/, only angular-app is tracked
+/artifacts/*
+!/artifacts/angular-app/
+
+# Within the allow-listed directories, still ignore common build/output noise
+**/node_modules/
+**/dist/
+**/tmp/
+**/out-tsc/
+**/.expo/
+**/.expo-shared/
+**/.cache/
+**/.local/
+**/.sass-cache/
+**/coverage/
+**/.replit-artifact/
+*.tsbuildinfo
+npm-debug.log
+yarn-error.log
+testem.log
+
+# System files
+.DS_Store
+Thumbs.db
