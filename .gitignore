@@ -13,9 +13,9 @@
 !/.windsurf/
 !/artifacts/
 
-# Under artifacts/, only angular-app is tracked
+# Under artifacts/, only todo-app is tracked
 /artifacts/*
-!/artifacts/angular-app/
+!/artifacts/todo-app/
 
 # Within the allow-listed directories, still ignore common build/output noise
 **/node_modules/
